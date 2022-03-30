@@ -1,0 +1,42 @@
+header {
+  // styling
+  position: fixed;
+  width: 100%;
+  min-height: 8vh;
+  background: $bg_color;
+  z-index: 999;
+
+  nav {
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    .nav-link {
+      &.active {
+        color: $main_color;
+        border-bottom: 2px solid currentColor;
+      }
+      color: $text_color;
+      white-space: nowrap;
+      padding-top: 15px;
+    }
+  }
+
+  .share_btn {
+    button {
+      i {
+        color: $main_color;
+      }
+    }
+    .dropdown-menu {
+      .bi-facebook {
+        color: #589ceb;
+      }
+    }
+  }
+
+  // bootstrap overriding
+  .dropdown-toggle::after {
+    display: none;
+  }
+}

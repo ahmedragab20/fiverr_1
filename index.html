@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style/main.css" />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- tabs nav -->
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <!-- nav links -->
+          <div class="col-11 overflow-auto">
+            <nav class="nav d-flex align-items-center flex-nowrap">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Overview</a
+              >
+              <a class="nav-link" href="#">Description</a>
+              <a class="nav-link" href="#">About the seller</a>
+              <a class="nav-link" href="#">Reviews</a>
+            </nav>
+          </div>
+          <!-- share -->
+          <div
+            class="col-1 share_btn d-flex justify-content-center align-items-center"
+          >
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-share-fill"></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item d-flex gap-2" href="#">
+                    <i class="bi bi-facebook"></i> share on facebook
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex gap-2" href="#">
+                    <i class="bi bi-twitter text-info"></i> share on twitter
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- main holder section -->
+    <main class="container">
+      <!-- breadcrumb & main_info -->
+
+      <div class="row mt-5">
+        <div class="col-lg-8">
+          <!-- main info -->
+          <div class="main_info container">
+            <!-- breadcrumb -->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#" class="text-decoration-none">Photoshop Editing</a>
+                </li>
+                <li class="breadcrumb-item" aria-current="page">
+                  <a href="#" class="text-decoration-none">Graphics & Design</a>
+                </li>
+              </ol>
+            </nav>
+            <!-- Title -->
+            <div class="title headline">
+              <h2 class="fw-bold">
+                I will do photo manipulation, digital artwork, photoshop editing
+              </h2>
+            </div>
+            <div
+              class="user_info d-flex gap-2 align-items-center flex-wrap mt-3"
+            >
+              <div class="image rounded-circle overflow-hidden">
+                <img
+                  src="./images/519aa74a-63ad-429d-b449-1ccdd33527e3.webp"
+                  alt="user image"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="user_name fw-bold">
+                <a href="#" class="text">istartworks</a>
+              </div>
+              <div class="user_level">
+                <span>Level 1 Seller</span>
+              </div>
+              <div class="user_rate d-flex gap-2">
+                <div class="stars">
+                  <div class="star active">
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="star active">
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="star active">
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="star active">
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="star active">
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <div class="rate_details">
+                  <span>(10)</span>
+                  <span class="text-muted">1 Order in Queue</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tabs -->
+          <div class="tabs_container mt-4 border d-block d-lg-none">
+            <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation" style="width: 33.333%">
+                <button
+                  class="nav-link w-100 py-3 px-4 active"
+                  id="pills-home-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-home"
+                  aria-selected="true"
+                >
+                  Home
+                </button>
+              </li>
+              <li class="nav-item" role="presentation" style="width: 33.333%">
+                <button
+                  class="nav-link w-100 py-3 px-4"
+                  id="pills-profile-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-profile"
+                  aria-selected="false"
+                >
+                  Profile
+                </button>
+              </li>
+              <li class="nav-item" role="presentation" style="width: 33.333%">
+                <button
+                  class="nav-link w-100 py-3 px-4"
+                  id="pills-contact-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-contact"
+                  aria-selected="false"
+                >
+                  Contact
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane p-2 fade show active"
+                id="pills-home"
+                role="tabpanel"
+                aria-labelledby="pills-home-tab"
+              >
+                <div
+                  class="title pt-3 d-flex justify-content-between align-items-center"
+                >
+                  <h5 class="headline">Little trick</h5>
+                  <h5 class="headline">79$</h5>
+                </div>
+                <div class="description my-3">
+                  <p>
+                    Simple Photoshop editing. Please contact me before ordering.
+                  </p>
+                </div>
+                <div class="info">
+                  <div class="d-flex gap-4 align-items-center">
+                    <div
+                      class="d-flex align-items-center gap-1 fw-bold headline"
+                    >
+                      <i
+                        class="bi bi-clock"
+                        style="transform: translateY(1px)"
+                      ></i>
+                      <span> 10 Days Delivery </span>
+                    </div>
+                    <div
+                      class="d-flex align-items-center gap-1 fw-bold headline"
+                    >
+                      <i
+                        class="bi bi-recycle"
+                        style="transform: translateY(1px)"
+                      ></i>
+                      <span> 10 Days Delivery </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="options mt-3">
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check text-success"></i>
+                    <span>Source File</span>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check"></i>
+                    <span>Commercial Use</span>
+                  </div>
+                </div>
+                <div class="w-100 mt-3">
+                  <a href="#" class="d-block btn p-2 bg_main">Continue (79$)</a>
+                </div>
+                <div class="w-100 mt-1">
+                  <a href="#" class="d-block btn p-2 bg_main_color_text"
+                    >Compare package</a
+                  >
+                </div>
+              </div>
+              <div
+                class="tab-pane p-2 fade"
+                id="pills-profile"
+                role="tabpanel"
+                aria-labelledby="pills-profile-tab"
+              >
+                <div
+                  class="title pt-3 d-flex justify-content-between align-items-center"
+                >
+                  <h5 class="headline">Magic spell</h5>
+                  <h5 class="headline">99$</h5>
+                </div>
+                <div class="description my-3">
+                  <p>
+                    Simple Photoshop editing. Please contact me before ordering.
+                  </p>
+                </div>
+                <div class="info">
+                  <div class="d-flex gap-4 align-items-center">
+                    <div
+                      class="d-flex align-items-center gap-1 fw-bold headline"
+                    >
+                      <i
+                        class="bi bi-clock"
+                        style="transform: translateY(1px)"
+                      ></i>
+                      <span> 10 Days Delivery </span>
+                    </div>
+                    <div
+                      class="d-flex align-items-center gap-1 fw-bold headline"
+                    >
+                      <i
+                        class="bi bi-recycle"
+                        style="transform: translateY(1px)"
+                      ></i>
+                      <span> 10 Days Delivery </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="options mt-3">
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check text-success"></i>
+                    <span>Source File</span>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check text-success"></i>
+                    <span>Source File</span>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check"></i>
+                    <span>Commercial Use</span>
+                  </div>
+                </div>
+                <div class="w-100 mt-3">
+                  <a href="#" class="d-block btn p-2 bg_main">Continue (99$)</a>
+                </div>
+                <div class="w-100 mt-1">
+                  <a href="#" class="d-block btn p-2 bg_main_color_text"
+                    >Compare package</a
+                  >
+                </div>
+              </div>
+              <div
+                class="tab-pane p-2 fade"
+                id="pills-contact"
+                role="tabpanel"
+                aria-labelledby="pills-contact-tab"
+              >
+                <div
+                  class="title pt-3 d-flex justify-content-between align-items-center"
+                >
+                  <h5 class="headline">Bombarda Maxima!</h5>
+                  <h5 class="headline">150$</h5>
+                </div>
+                <div class="description my-3">
+                  <p>
+                    Several objects from photo and extra detailed work. Please
+                    contact me before ordering.
+                  </p>
+                </div>
+                <div class="info">
+                  <div class="d-flex gap-4 align-items-center">
+                    <div
+                      class="d-flex align-items-center gap-1 fw-bold headline"
+                    >
+                      <i
+                        class="bi bi-clock"
+                        style="transform: translateY(1px)"
+                      ></i>
+                      <span> 10 Days Delivery </span>
+                    </div>
+                    <div
+                      class="d-flex align-items-center gap-1 fw-bold headline"
+                    >
+                      <i
+                        class="bi bi-recycle"
+                        style="transform: translateY(1px)"
+                      ></i>
+                      <span> 10 Days Delivery </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="options mt-3">
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check text-success"></i>
+                    <span>Source File</span>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check text-success"></i>
+                    <span>Source File</span>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check text-success"></i>
+                    <span>Source File</span>
+                  </div>
+                </div>
+                <div class="w-100 mt-3">
+                  <a href="#" class="d-block btn p-2 bg_main"
+                    >Continue (150$)</a
+                  >
+                </div>
+                <div class="w-100 mt-1">
+                  <a href="#" class="d-block btn p-2 bg_main_color_text"
+                    >Compare package</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- slider -->
+          <div class="container mt-4">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/mian_slider_1.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/mian_slider_2.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/mian_slider_3.webp" />
+                </div>
+              </div>
+              <div class="swiper-button-next shadow bg-white"></div>
+              <div class="swiper-button-prev shadow bg-white"></div>
+            </div>
+          </div>
+
+          <!-- Reaction -->
+          <div class="mt-4 reactions">
+            <div
+              class="title d-flex justify-content-between align-items-center flex-wrap p-3"
+            >
+              <div>
+                <h5 class="headline fw-bold">
+                  What people loved about this seller
+                </h5>
+              </div>
+              <div>
+                <a href="#" class="btn-sm text_main">See all reviews</a>
+              </div>
+            </div>
+            <div class="container mt-4">
+              <div class="swiper mySwiper sm">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide sm">
+                    <div class="card_container rounded border px-sm-3 px-1">
+                      <div
+                        class="d-flex flex-wrap p-sm-3 p-1 text-sm-start text-center"
+                      >
+                        <div
+                          class="col-sm-1 col-12 d-flex justify-content-center"
+                        >
+                          <div class="image">
+                            <img
+                              src="./images/519aa74a-63ad-429d-b449-1ccdd33527e3.webp"
+                              alt="user image"
+                              class="img-fluid"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-11 col-12">
+                          <div class="context px-sm-3">
+                            <div
+                              class="title d-flex gap-2 align-items-center justify-content-sm-start justify-content-center mb-3 mb-sm-1 mt-1"
+                            >
+                              <div class="user_name">
+                                <h6>user name</h6>
+                              </div>
+                              <div class="country">
+                                <img
+                                  src="./images/kuwait.png"
+                                  width="5"
+                                  alt="country image"
+                                />
+                                <span>Kuwait</span>
+                              </div>
+                              <div class="stars d-flex gap-1">
+                                <div class="star">
+                                  <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <span>5</span>
+                              </div>
+                            </div>
+                            <div class="txt">
+                              Quick response to my initial inquiry and
+                              understood immediately what I wanted. Completed
+                              the task perfectly and rapidly for a very fair
+                              price. Highly recommended for photo
+                              manipulation/editing!
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next shadow bg-white"></div>
+                <div class="swiper-button-prev shadow bg-white"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- about this gig -->
+          <div class="about_gig mb-4">
+            <div class="title headline mt-4">
+              <h3>About This Gig</h3>
+            </div>
+            <div class="mt-3">
+              <span class="marker fw-bold"
+                >***Top Rated Shopify Dropshipping Expert At Your
+                Service***</span
+              >
+            </div>
+            <div class="mt-3">
+              <p>
+                Shopify Dropshipping is evolving, and it's a thing of the past
+                to just put products in the store and get sales. Now, you need
+                more in-depth niche/supplier research and more professional
+                brand store design to impress your customers and surpass your
+                competitors. This is where I can help you!
+              </p>
+            </div>
+            <div class="mt-3">
+              <div class="stared_title fw-bold">
+                <i class="bi bi-star-fill text-warning"></i>
+                What You Will Get
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <ul>
+                <li>Custom brand store designed for conversion</li>
+                <li>Custom brand store designed for conversion</li>
+                <li>Custom brand store designed for conversion</li>
+                <li>Custom brand store designed for conversion</li>
+              </ul>
+            </div>
+            <div class="mt-3 d-flex gap-2">
+              <div class="marker">Kindly note:</div>
+              <div>
+                Before placing an order, please send me a message through inbox.
+                Thank you!
+              </div>
+            </div>
+            <hr class="my-3" />
+            <div class="section_footer">
+              <div class="row">
+                <div class="col-6">
+                  <p class="text-black-50 h5">Platform</p>
+                  <p class="h5 headline">Shopify</p>
+                </div>
+                <div class="col-6">
+                  <p class="text-black-50 h5">Supported plugin types</p>
+                  <p class="h5 headline">
+                    Payment, Social media, Shipping, Dropshipping, Video, Form,
+                    Chat Map, FAQ, Gallery,
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- about seller -->
+          <div class="about_seller mt-4">
+            <h3 class="headline">About The Seller</h3>
+
+            <div class="row mt-3">
+              <div
+                class="col-sm-2 col-12 d-flex justify-content-center justify-content-sm-start"
+              >
+                <div class="image mb-3">
+                  <img
+                    src="./images/user_lg.webp"
+                    class="img-fluid"
+                    alt="user imgae"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-10 col-12 text-center text-sm-start">
+                <div class="title headline mb-3">
+                  <h5>eileen_lue</h5>
+                </div>
+                <div class="description">
+                  <p>digital artist, photo editor and graphic designer</p>
+                </div>
+                <div
+                  class="user_rate d-flex gap-2 justify-content-sm-start justify-content-center"
+                >
+                  <div class="stars d-flex gap-2">
+                    <div class="star text-warning">
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="star text-warning">
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="star text-warning">
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="star text-warning">
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="star text-warning">
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                  <strong class="text-warning">5</strong>
+                  <div class="rate_details">
+                    <span>(10)</span>
+                  </div>
+                </div>
+                <div class="button mt-3">
+                  <a href="#" class="btn btn-outline-secondary"> Contact Me </a>
+                </div>
+              </div>
+            </div>
+            <div class="row border rounded mt-3">
+              <div class="col-6 my-2 px-3">
+                <h5 class="text-muted">From</h5>
+                <h5 class="headline">Cina</h5>
+              </div>
+              <div class="col-6 my-2 px-3">
+                <h5 class="text-muted">From</h5>
+                <h5 class="headline">Cina</h5>
+              </div>
+              <div class="col-6 my-2 px-3">
+                <h5 class="text-muted">From</h5>
+                <h5 class="headline">Cina</h5>
+              </div>
+              <div class="col-6 my-2 px-3">
+                <h5 class="text-muted">From</h5>
+                <h5 class="headline">Cina</h5>
+              </div>
+              <div class="col-12 border-top py-4 px-3">
+                <p>
+                  Hi I'm Eileen! I have 4 years of website building experience.
+                  In the cooperation with global clients, I have mastered
+                  complete and effective Shopify and Wordpress related skills.
+                  This allowed me to develop a team of my own and build more
+                  than 200+ successful Shopify stores and Wordpress websites. It
+                  is my team's mission to help you start and grow your business
+                  wholeheartedly. We ensure this with plenty of passion and
+                  skills :)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FQA -->
+          <div class="fqa mt-4">
+            <h3 class="headline mt-3">FQA</h3>
+            <div
+              class="accordion bg-transparent border-0"
+              id="accordionPanelsStayOpenExample"
+            >
+              <div class="accordion-item bg-transparent border-0">
+                <h2
+                  class="accordion-header bg-transparent"
+                  id="panelsStayOpen-headingOne"
+                >
+                  <button
+                    class="accordion-button bg-transparent border-bottom"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne"
+                  >
+                    What information do you need from me to to start?
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseOne"
+                  class="accordion-collapse collapse show bg-transparent"
+                  aria-labelledby="panelsStayOpen-headingOne"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It
+                    is shown by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-transparent border-0">
+                <h2
+                  class="accordion-header bg-transparent"
+                  id="panelsStayOpen-headingTwo"
+                >
+                  <button
+                    class="accordion-button collapsed border-bottom bg-transparent"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo"
+                  >
+                    I'm a beginner, can I start Shopify dropshipping?
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseTwo"
+                  class="accordion-collapse collapse bg-transparent"
+                  aria-labelledby="panelsStayOpen-headingTwo"
+                >
+                  <div class="accordion-body bg-transparent">
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reviews -->
+          <div class="reviews mt-4">
+            <div class="header">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="rate d-flex gap-2 align-items-center">
+                    <h4 class="headline">450 Reviews</h4>
+                    <div class="stars d-flex gap-2">
+                      <div class="star text-warning h6 mt-1">
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <div class="star text-warning h6 mt-1">
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <div class="star text-warning h6 mt-1">
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <div class="star text-warning h6 mt-1">
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <div class="star text-warning h6 mt-1">
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                    <strong class="text-warning h6 mt-1">5</strong>
+                  </div>
+                </div>
+                <div
+                  class="col-sm-6 d-flex justify-content-end align-items-center"
+                >
+                  <div class="d-flex gap-2 align-content-center">
+                    <p>Sort by</p>
+                    <div class="dropdown">
+                      <a
+                        class="dropdown-toggle fw-bold headline"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Dropdown link
+                      </a>
+
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuLink"
+                      >
+                        <li>
+                          <a class="dropdown-item py-2 px-3" href="#"
+                            >Most recent</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item py-2 px-3" href="#"
+                            >Most relevant</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 my-2">
+                  <div class="row">
+                    <div class="col-sm-6 reviews_bar">
+                      <div
+                        class="d-flex justify-content-between align-items-center gap-2"
+                      >
+                        <span class="star_span"> <strong>5</strong> Star </span>
+                        <div
+                          class="progress rounded-pill mt-1"
+                          style="height: 10px; width: 60%"
+                        >
+                          <div
+                            class="progress-bar bg-warning rounded-pill"
+                            role="progressbar"
+                            style="width: 100%; height: 10px"
+                            aria-valuenow="100"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <span>(433)</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <p class="mt-0 mt-sm-2 mb-0">Rating Breakdown</p>
+                        <span class="fw-bold">
+                          5
+                          <i class="bi bi-star-fill text-warning"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 my-2">
+                  <div class="row">
+                    <div class="col-sm-6 reviews_bar">
+                      <div
+                        class="d-flex justify-content-between align-items-center gap-2"
+                      >
+                        <span class="star_span"> <strong>5</strong> Star </span>
+                        <div
+                          class="progress rounded-pill mt-1"
+                          style="height: 10px; width: 60%"
+                        >
+                          <div
+                            class="progress-bar bg-warning rounded-pill"
+                            role="progressbar"
+                            style="width: 85%; height: 10px"
+                            aria-valuenow="85"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <span>(654)</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <p class="mt-0 mt-sm-2 mb-0">
+                          Seller communication level
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="mt-4" />
+
+          <!-- Review_comments -->
+          <div class="review_comments my-4">
+            <div class="row">
+              <div class="col-sm-1 col-12">
+                <div class="image mx-auto">
+                  <img
+                    src="./images/519aa74a-63ad-429d-b449-1ccdd33527e3.webp"
+                    alt="user image"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-11 col-12">
+                <div class="context">
+                  <div class="header">
+                    <div class="name_rate d-flex gap-2">
+                      <h5 class="headline fw-bold">terrivann</h5>
+                      <span>
+                        <i class="bi bi-star-fill text-warning"></i> 5
+                      </span>
+                    </div>
+                    <div class="country d-flex align-items-center gap-1">
+                      <img src="./images/kuwait.png" width="20" />
+                      Kuwait
+                    </div>
+                  </div>
+                  <div class="discription">
+                    <p class="mt-2">
+                      First time Purchasing a Service off of fiver. was a little
+                      skeptical at first but Eileen did an amazing job. I was
+                      wowed by the way everything turned out. Will definitely
+                      use her again and would Recommend to anyone looking for a
+                      Quality made store.
+                    </p>
+                  </div>
+                  <div>
+                    <strong>Published 2 months ago</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="container">
+            <div class="tabs_container position-fixed">
+              <div class="border">
+                <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
+                  <li
+                    class="nav-item"
+                    role="presentation"
+                    style="width: 33.333%"
+                  >
+                    <button
+                      class="nav-link w-100 py-3 px-4 active"
+                      id="pills-home-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-home"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-home"
+                      aria-selected="true"
+                    >
+                      Home
+                    </button>
+                  </li>
+                  <li
+                    class="nav-item"
+                    role="presentation"
+                    style="width: 33.333%"
+                  >
+                    <button
+                      class="nav-link w-100 py-3 px-4"
+                      id="pills-profile-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-profile"
+                      aria-selected="false"
+                    >
+                      Profile
+                    </button>
+                  </li>
+                  <li
+                    class="nav-item"
+                    role="presentation"
+                    style="width: 33.333%"
+                  >
+                    <button
+                      class="nav-link w-100 py-3 px-4"
+                      id="pills-contact-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-contact"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-contact"
+                      aria-selected="false"
+                    >
+                      Contact
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div
+                    class="tab-pane p-2 fade show active"
+                    id="pills-home"
+                    role="tabpanel"
+                    aria-labelledby="pills-home-tab"
+                  >
+                    <div
+                      class="title pt-3 d-flex justify-content-between align-items-center"
+                    >
+                      <h5 class="headline">Little trick</h5>
+                      <h5 class="headline">79$</h5>
+                    </div>
+                    <div class="description my-3">
+                      <p>
+                        Simple Photoshop editing. Please contact me before
+                        ordering.
+                      </p>
+                    </div>
+                    <div class="info">
+                      <div class="d-flex gap-4 align-items-center">
+                        <div
+                          class="d-flex align-items-center gap-1 fw-bold headline"
+                        >
+                          <i
+                            class="bi bi-clock"
+                            style="transform: translateY(1px)"
+                          ></i>
+                          <span> 10 Days Delivery </span>
+                        </div>
+                        <div
+                          class="d-flex align-items-center gap-1 fw-bold headline"
+                        >
+                          <i
+                            class="bi bi-recycle"
+                            style="transform: translateY(1px)"
+                          ></i>
+                          <span> 10 Days Delivery </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="options mt-3">
+                      <div class="d-flex gap-2">
+                        <i class="bi bi-check text-success"></i>
+                        <span>Source File</span>
+                      </div>
+                      <div class="d-flex gap-2">
+                        <i class="bi bi-check"></i>
+                        <span>Commercial Use</span>
+                      </div>
+                    </div>
+                    <div class="w-100 mt-3">
+                      <a href="#" class="d-block btn p-2 bg_main"
+                        >Continue (79$)</a
+                      >
+                    </div>
+                    <div class="w-100 mt-1">
+                      <a href="#" class="d-block btn p-2 bg_main_color_text"
+                        >Compare package</a
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane p-2 fade"
+                    id="pills-profile"
+                    role="tabpanel"
+                    aria-labelledby="pills-profile-tab"
+                  >
+                    <div
+                      class="title pt-3 d-flex justify-content-between align-items-center"
+                    >
+                      <h5 class="headline">Magic spell</h5>
+                      <h5 class="headline">99$</h5>
+                    </div>
+                    <div class="description my-3">
+                      <p>
+                        Simple Photoshop editing. Please contact me before
+                        ordering.
+                      </p>
+                    </div>
+                    <div class="info">
+                      <div class="d-flex gap-4 align-items-center">
+                        <div
+                          class="d-flex align-items-center gap-1 fw-bold headline"
+                        >
+                          <i
+                            class="bi bi-clock"
+                            style="transform: translateY(1px)"
+                          ></i>
+                          <span> 10 Days Delivery </span>
+                        </div>
+                        <div
+                          class="d-flex align-items-center gap-1 fw-bold headline"
+                        >
+                          <i
+                            class="bi bi-recycle"
+                            style="transform: translateY(1px)"
+                          ></i>
+                          <span> 10 Days Delivery </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="options mt-3">
+                      <div class="d-flex gap-2">
+                        <i class="bi bi-check text-success"></i>
+                        <span>Source File</span>
+                      </div>
+                      <div class="d-flex gap-2">
+                        <i class="bi bi-check text-success"></i>
+                        <span>Source File</span>
+                      </div>
+                      <div class="d-flex gap-2">
+                        <i class="bi bi-check"></i>
+                        <span>Commercial Use</span>
+                      </div>
+                    </div>
+                    <div class="w-100 mt-3">
+                      <a href="#" class="d-block btn p-2 bg_main"
+                        >Continue (99$)</a
+                      >
+                    </div>
+                    <div class="w-100 mt-1">
+                      <a href="#" class="d-block btn p-2 bg_main_color_text"
+                        >Compare package</a
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane p-2 fade"
+                    id="pills-contact"
+                    role="tabpanel"
+                    aria-labelledby="pills-contact-tab"
+                  >
+                    <div
+                      class="title pt-3 d-flex justify-content-between align-items-center"
+                    >
+                      <h5 class="headline">Bombarda Maxima!</h5>
+                      <h5 class="headline">150$</h5>
+                    </div>
+                    <div class="description my-3">
+                      <p>
+                        Several objects from photo and extra detailed work.
+                        Please contact me before ordering.
+                      </p>
+                    </div>
+                    <div class="info">
+                      <div class="d-flex gap-4 align-items-center">
+                        <div
+                          class="d-flex align-items-center gap-1 fw-bold headline"
+                        >
+                          <i
+                            class="bi bi-clock"
+                            style="transform: translateY(1px)"
+                          ></i>
+                          <span> 10 Days Delivery </span>
+                        </div>
+                        <div
+                          class="d-flex align-items-center gap-1 fw-bold headline"
+                        >
+                          <i
+                            class="bi bi-recycle"
+                            style="transform: translateY(1px)"
+                          ></i>
+                          <span> 10 Days Delivery </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="options mt-3">
+                      <div class="d-flex gap-2">
+                        <i class="bi bi-check text-success"></i>
+                        <span>Source File</span>
+                      </div>
+                      <div class="d-flex gap-2">
+                        <i class="bi bi-check text-success"></i>
+                        <span>Source File</span>
+                      </div>
+                      <div class="d-flex gap-2">
+                        <i class="bi bi-check text-success"></i>
+                        <span>Source File</span>
+                      </div>
+                    </div>
+                    <div class="w-100 mt-3">
+                      <a href="#" class="d-block btn p-2 bg_main"
+                        >Continue (150$)</a
+                      >
+                    </div>
+                    <div class="w-100 mt-1">
+                      <a href="#" class="d-block btn p-2 bg_main_color_text"
+                        >Compare package</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-3 p-3 contact_seller">
+                <a href="#" class="d-block btn btn-outline-secondary py-2">
+                  Contact Seller
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

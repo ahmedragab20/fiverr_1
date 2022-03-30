@@ -1,0 +1,57 @@
+// plugins
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+// Files
+@import "./variables";
+@import "./header";
+@import "./main_info";
+@import "./_reactions";
+@import "./about_gig";
+@import "./about_seller";
+@import "./_reviews";
+@import "./_tabs";
+@import "./swiper";
+
+body {
+  background: $bg_color;
+  color: $text_color;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+main {
+  padding-top: 5vh;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: $text_color;
+  }
+}
+
+.text {
+  color: $text_color;
+}
+.headline {
+  color: $headline_color;
+}
+.text_main {
+  color: $main_color;
+}
+.bg_main {
+  background: $main_color;
+  color: #fff;
+
+  &:hover {
+    background: $main_color;
+    color: #fff;
+  }
+}
+.bg_main_color_text {
+  color: $main_color;
+}

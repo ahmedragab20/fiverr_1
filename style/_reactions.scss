@@ -1,0 +1,28 @@
+.reactions {
+  .swiper {
+    .card_container {
+      .image {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      .context {
+        .user_name {
+          transform: translateY(2px);
+        }
+
+        .country {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+
+          img {
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+}

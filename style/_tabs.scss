@@ -1,0 +1,45 @@
+.tabs_container {
+  &.position-fixed {
+    top: 10vh;
+    right: 25px;
+    width: 30%;
+
+    @media (min-width: 1025px) {
+      right: 45px;
+    }
+  }
+
+  .contact_seller {
+    background: #eee;
+  }
+
+  .options {
+    div {
+      display: flex;
+      align-items: center;
+      span {
+        font-size: 1.1rem;
+      }
+      i {
+        font-size: 1.7rem;
+      }
+    }
+  }
+  // bootstrap overriding
+  .nav-pills {
+    background: #eee;
+  }
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    border-bottom: 3px solid;
+    border-color: $main_color;
+    background: none;
+    color: $main_color;
+    background: #fff;
+    font-weight: bold;
+  }
+  .nav-link {
+    border-radius: 0;
+    color: $text_color;
+  }
+}

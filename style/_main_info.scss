@@ -1,0 +1,23 @@
+.main_info {
+  .user_info {
+    .image {
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .user_rate {
+      .stars {
+        display: flex;
+        gap: 3px;
+        .star {
+          &.active {
+            color: orange;
+          }
+        }
+      }
+    }
+  }
+}

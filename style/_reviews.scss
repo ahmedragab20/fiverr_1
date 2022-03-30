@@ -1,0 +1,24 @@
+.reviews {
+  .reviews_bar {
+    span {
+      color: $main_color;
+
+      &.star_span {
+        cursor: default;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        &:hover {
+          background: rgba(29, 101, 255, 0.075);
+        }
+      }
+    }
+  }
+}
+.review_comments {
+  .image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
