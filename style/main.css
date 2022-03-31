@@ -263,15 +263,18 @@ body {
   background: #f7f7f7;
   color: #707070;
   font-family: "Source Sans Pro", sans-serif;
+  scroll-behavior: smooth;
 }
 
 main {
   padding-top: 5vh;
 }
 
-.dropdown *:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+.dropdown *:focus,
+.accordion-button:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  color: #194275 !important;
 }
 
 a {

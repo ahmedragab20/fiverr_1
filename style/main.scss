@@ -26,8 +26,10 @@ body {
 main {
   padding-top: 5vh;
 }
-.dropdown *:focus {
-  box-shadow: none;
+.dropdown *:focus,
+.accordion-button:focus {
+  box-shadow: none !important;
+  color: $main_color !important;
 }
 a {
   text-decoration: none;
