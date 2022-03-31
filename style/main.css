@@ -63,6 +63,12 @@ header .dropdown-toggle::after {
   color: orange;
 }
 
+@media (max-width: 480px) {
+  .reactions .container {
+    width: 100% !important;
+  }
+}
+
 .reactions .swiper .card_container .image {
   width: 35px;
   height: 35px;
@@ -198,6 +204,12 @@ header .dropdown-toggle::after {
   max-height: auto !important;
 }
 
+@media (max-width: 480px) {
+  .swiper-slide {
+    padding: 0 10px;
+  }
+}
+
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -222,6 +234,17 @@ header .dropdown-toggle::after {
           align-items: center;
 }
 
+@media (max-width: 480px) {
+  .swiper-button-next {
+    -webkit-transform: scale(0.7) translateX(10px) !important;
+            transform: scale(0.7) translateX(10px) !important;
+  }
+  .swiper-button-prev {
+    -webkit-transform: scale(0.7) translateX(-10px) !important;
+            transform: scale(0.7) translateX(-10px) !important;
+  }
+}
+
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
   -webkit-transform: scale(0.5);
@@ -244,6 +267,11 @@ body {
 
 main {
   padding-top: 5vh;
+}
+
+.dropdown *:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 a {

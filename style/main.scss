@@ -25,7 +25,9 @@ body {
 main {
   padding-top: 5vh;
 }
-
+.dropdown *:focus {
+  box-shadow: none;
+}
 a {
   text-decoration: none;
 
