@@ -65,7 +65,7 @@
       </div>
     </header>
     <!-- main holder section -->
-    <main class="container">
+    <main class="container position-relative">
       <!-- breadcrumb & main_info -->
 
       <div class="row mt-5">
@@ -867,9 +867,9 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 d-none d-lg-block">
+        <div class="col-lg-4 d-none d-lg-block tabs_col">
           <div class="container">
-            <div class="tabs_container position-fixed">
+            <div class="tabs_container position-fixed" id="tabs_container">
               <div class="border">
                 <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
                   <li
@@ -1131,6 +1131,12 @@
         </div>
       </div>
     </main>
+    <footer
+      class="footer text-center py-5 mt-3 bg-dark text-white"
+      style="height: 1000px"
+    >
+      its a footer
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -1138,6 +1144,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
 
     <!-- Initialize Swiper -->
     <script>

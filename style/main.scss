@@ -15,7 +15,10 @@
 @import "./_reviews";
 @import "./_tabs";
 @import "./swiper";
-
+html,
+body {
+  overflow-x: hidden;
+}
 body {
   background: $bg_color;
   color: $text_color;

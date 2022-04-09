@@ -134,14 +134,17 @@ header .dropdown-toggle::after {
   overflow: hidden;
 }
 
-.tabs_container.position-fixed {
-  top: 10vh;
+.tabs_container {
   right: 25px;
   width: 30%;
 }
 
+.tabs_container.position-fixed {
+  top: 10vh;
+}
+
 @media (min-width: 1025px) {
-  .tabs_container.position-fixed {
+  .tabs_container {
     right: 45px;
   }
 }
@@ -257,6 +260,11 @@ header .dropdown-toggle::after {
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
   color: #707070;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 body {
